@@ -1,6 +1,7 @@
 # wolly_vpn
 
-A new Flutter project.
+A New Flutter project which is basically a VPN(Virtual private network).
+
 
 ## Getting Started
 
