@@ -617,7 +617,6 @@ Widget bottomSheet(context, setC) {
         child: ListTile(
           onTap: () {
             setC("United-States");
-            Navigator.pop(context);
           },
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
