@@ -273,7 +273,7 @@ class _HomeState extends State<Home> {
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
                                     side: BorderSide(color: borderColor),
-                                    primary: bgTwo,
+                                    backgroundColor: bgTwo,
                                     elevation: 0,
                                     textStyle: const TextStyle(fontSize: 20)),
                                 onPressed: () {
@@ -477,162 +477,160 @@ class _HomeState extends State<Home> {
 }
 
 Widget bottomSheet(context, setC) {
-  return Container(
-    child: ListView(
-      children: [
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("France");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/France.png",
-              height: 40,
-            ),
-            title: "France".text.xl.make(),
+  return ListView(
+    children: [
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("France");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/France.png",
+            height: 40,
           ),
+          title: "France".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Germany");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Germany.png",
-              height: 40,
-            ),
-            title: "Germany".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Germany");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Germany.png",
+            height: 40,
           ),
+          title: "Germany".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Indonesia");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Indonesia.png",
-              height: 40,
-            ),
-            title: "Indonesia".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Indonesia");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Indonesia.png",
+            height: 40,
           ),
+          title: "Indonesia".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Ialy");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Italy.png",
-              height: 40,
-            ),
-            title: "Italy".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Italy");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Italy.png",
+            height: 40,
           ),
+          title: "Italy".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Malaysia");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Malaysia.png",
-              height: 40,
-            ),
-            title: "Malaysia".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Malaysia");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Malaysia.png",
+            height: 40,
           ),
+          title: "Malaysia".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Spain");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Spain.png",
-              height: 40,
-            ),
-            title: "Spain".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Spain");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Spain.png",
+            height: 40,
           ),
+          title: "Spain".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("Turkey");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/Turkey.png",
-              height: 40,
-            ),
-            title: "Trukey".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("Turkey");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/Turkey.png",
+            height: 40,
           ),
+          title: "Trukey".text.xl.make(),
         ),
-        Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
-          child: ListTile(
-            onTap: () {
-              setC("United-States");
-              Navigator.pop(context);
-            },
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-            tileColor: borderColor,
-            textColor: Colors.white,
-            horizontalTitleGap: 80,
-            leading: Image.asset(
-              "assets/flags/United-States.png",
-              height: 40,
-            ),
-            title: "United States".text.xl.make(),
+      ),
+      Padding(
+        padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: ListTile(
+          onTap: () {
+            setC("United-States");
+            Navigator.pop(context);
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+          tileColor: borderColor,
+          textColor: Colors.white,
+          horizontalTitleGap: 80,
+          leading: Image.asset(
+            "assets/flags/United-States.png",
+            height: 40,
           ),
+          title: "United States".text.xl.make(),
         ),
-      ],
-    ),
+      ),
+    ],
   );
 }
